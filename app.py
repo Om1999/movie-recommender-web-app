@@ -9,7 +9,7 @@ import os
 def download_similarity_matrix():
     if not os.path.exists('similarity.pkl'):
         with st.spinner('Downloading similarity matrix... This might take a moment.'):
-            url = "YOUR_DIRECT_DOWNLOAD_LINK"
+            url = "https://drive.google.com/file/d/1opauFx2fXw6CN8eoVhiYTuyumbUQYqk6/view?usp=sharing"
             r = requests.get(url, allow_redirects=True)
             with open('similarity.pkl', 'wb') as f:
                 f.write(r.content)
